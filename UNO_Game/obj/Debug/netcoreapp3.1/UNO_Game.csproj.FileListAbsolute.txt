@@ -1,0 +1,13 @@
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\bin\Debug\netcoreapp3.1\UNO_Game.exe
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\bin\Debug\netcoreapp3.1\UNO_Game.deps.json
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\bin\Debug\netcoreapp3.1\UNO_Game.runtimeconfig.json
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\bin\Debug\netcoreapp3.1\UNO_Game.runtimeconfig.dev.json
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\bin\Debug\netcoreapp3.1\UNO_Game.dll
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\bin\Debug\netcoreapp3.1\UNO_Game.pdb
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\obj\Debug\netcoreapp3.1\UNO_Game.csprojAssemblyReference.cache
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\obj\Debug\netcoreapp3.1\UNO_Game.csproj.CoreCompileInputs.cache
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\obj\Debug\netcoreapp3.1\UNO_Game.AssemblyInfoInputs.cache
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\obj\Debug\netcoreapp3.1\UNO_Game.AssemblyInfo.cs
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\obj\Debug\netcoreapp3.1\UNO_Game.dll
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\obj\Debug\netcoreapp3.1\UNO_Game.pdb
+C:\Users\Gul\source\repos\UNO_Game\UNO_Game\obj\Debug\netcoreapp3.1\UNO_Game.genruntimeconfig.cache
