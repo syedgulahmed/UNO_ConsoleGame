@@ -6,6 +6,7 @@ using System.Text;
 
 namespace UNO_Game
 {
+    //This class will contain all the information about cards
     abstract class Card
     {
         protected int cardID;

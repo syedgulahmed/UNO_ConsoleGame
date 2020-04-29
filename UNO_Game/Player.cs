@@ -5,6 +5,9 @@ using System.Text;
 
 namespace UNO_Game
 {
+
+    //This class will contain all the information of player
+    //like having cards, points, name etc
     class Player
     {
         private String playerName;

@@ -4,6 +4,8 @@ using System.Text;
 
 namespace UNO_Game
 {
+
+    //This help in mainting Deck of Draw cards other card lists
     class Stack
     {
 
@@ -14,6 +16,11 @@ namespace UNO_Game
         {
             cards = new Card[108];
             size = 0;
+        }
+
+        public Stack(int size)
+        {
+            this.size = size;
         }
 
         public Card[] getDeck()

@@ -25,12 +25,12 @@ namespace UNO_Game
 
         static void Main()
         {
-            int selectedOption;
-            fileHandler = new FileHandler();
-
             //Generating UNO Cards
             collectCards();
 
+            int selectedOption;
+            fileHandler = new FileHandler(orderedDeck);
+            
             Console.WriteLine("1. To Start New Game");
             Console.WriteLine("2. To load saved Game");
 
@@ -42,7 +42,18 @@ namespace UNO_Game
 
 
             //Getting Player's Information
-            initializePlayers();
+            if (selectedOption == 1)
+            {
+                initializePlayers();
+            }
+            else
+            {
+                playerList = fileHandler.getPlayerList();
+                drawPile = fileHandler.getDraw();
+                discardPile = fileHandler.getDiscard();
+                skipCardPlayed = fileHandler.getCardSkiped();
+            }
+
 
             //Playing Game
             do
@@ -66,9 +77,11 @@ namespace UNO_Game
 
             } while (!playerList.gameEnds());
             
-
+    
         }
 
+        
+        //This method will play a single round of each game
         private static void playRound()
         {
             Card topDiscard;
@@ -105,6 +118,7 @@ namespace UNO_Game
 
         }
 
+        //This method will allow user to select the card
         private static void selectCard(Card discardTop)
         {
 
@@ -142,6 +156,7 @@ namespace UNO_Game
 
         }
 
+        //This method will see if selected card is acceptable
         private static bool isCardAcceptable(Card card, Card discardTop)
         {
 
@@ -202,6 +217,7 @@ namespace UNO_Game
 
         } 
 
+        //This method will perform the required action according to card present on discard top
         private static void performRequiredAction(Card discardTop)
         {
 
@@ -239,6 +255,7 @@ namespace UNO_Game
 
         }
 
+        //This method will distribute the cards among users
         private static void dealCards() {
 
             Player[] players = playerList.getPlayersList();
@@ -264,6 +281,7 @@ namespace UNO_Game
         
         }
 
+        //this method will shuffle the cards
         private static void shuffleCards() {
 
             shuffledDeck = new Card[108];
@@ -286,12 +304,14 @@ namespace UNO_Game
 
         }
 
+        //This method will help in shuffling the card
         public static int RandomNumber(int min, int max)
         {
             Random random = new Random();
             return random.Next(min, max);
         }
 
+        //This method will ask about players
         private static void initializePlayers()
         {
             do
@@ -316,6 +336,7 @@ namespace UNO_Game
 
         }
 
+        //This method will create cards
         private static void collectCards()
         {
             orderedDeck = new Card[108];
@@ -367,6 +388,7 @@ namespace UNO_Game
 
         }
 
+        //This method will make sure Action card and wild card don't appear firt
         private static void MakeSureFirstCardMustBeNumberCard()
         {
             Card temp;

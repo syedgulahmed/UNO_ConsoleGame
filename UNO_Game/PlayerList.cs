@@ -5,14 +5,25 @@ using System.Text;
 
 namespace UNO_Game
 {
+    //This class will contain all the players and decide
+    //who to play turn, direction and scoring
     class PlayerList
     {
-
+        
         Player[] players;
         int totalPlayers;
         int currentSize;
         int currentPlayer;
         bool clockWise = true;
+
+        public void getSavedData(Player[] players, int total, int currentPlayer, bool clockWise)
+        {
+            this.players = players;
+            this.totalPlayers = total;
+            this.currentSize = total;
+            this.currentPlayer = currentPlayer;
+            this.clockWise = clockWise;
+        }
 
         public Player[] getPlayersList()
         {
